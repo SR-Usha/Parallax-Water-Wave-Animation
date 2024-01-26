@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=10.0">
+    <title>Water wave effect</title>
+    <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+    <section>
+        <div class ="wave" id ="wave1" style = "--i:1"></div>
+        <div class ="wave" id ="wave2" style = "--i:2"></div>
+        <div class ="wave" id ="wave3" style = "--i:3"></div>
+        <div class ="wave" id ="wave4" style = "--i:4"></div>
+    </section>
+    <div class="sec">
+        <h1> Animated Parallax Water Wave Effects</h1>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque officia tempora soluta ratione tenetur eos
+            aliquid dignissimos consectetur nam quod voluptatibus porro culpa, rem repudiandae dicta quis repellat in
+            distinctio.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque officia tempora soluta ratione tenetur eos
+            aliquid dignissimos consectetur nam quod voluptatibus porro culpa, rem repudiandae dicta quis repellat in
+            distinctio.
+            <br><br>
+        <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus eligendi, nulla nisi fugiat vitae cupiditate
+            natus harum. Asperiores necessitatibus debitis vero iusto sed ipsa molestias, exercitationem dolore quasi
+            quod. Deserunt!. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ullam necessitatibus, hic
+            tenetur excepturi voluptatibus temporibus totam recusandae distinctio quae voluptatem repellat iste quas
+            odit saepe reprehenderit sequi adipisci inventore?</p>
+        </p>
+        </p>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque officia tempora soluta ratione tenetur eos
+            aliquid dignissimos consectetur nam quod voluptatibus porro culpa, rem repudiandae dicta quis repellat in
+            distinctio.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque officia tempora soluta ratione tenetur eos
+            aliquid dignissimos consectetur nam quod voluptatibus porro culpa, rem repudiandae dicta quis repellat in
+            distinctio.
+            <br><br>
+        <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus eligendi, nulla nisi fugiat vitae cupiditate
+            natus harum. Asperiores necessitatibus debitis vero iusto sed ipsa molestias, exercitationem dolore quasi
+            quod. Deserunt!. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ullam necessitatibus, hic
+            tenetur excepturi voluptatibus temporibus totam recusandae distinctio quae voluptatem repellat iste quas
+            odit saepe reprehenderit sequi adipisci inventore?</p>
+        </p>
+        </p>
+    </div>
+
+</body>
+<script>
+    let wave1 = document.getElementById('wave1');
+    let wave2 = document.getElementById('wave2');
+    let wave3 = document.getElementById('wave3');
+    let wave4 = document.getElementById('wave4');
+
+    window.addEventListener("scroll", function() {
+        let value = window.scrollY;
+        wave1.style.backgroundPositionX = 400 + value * 4 + 'px';
+        wave2.style.backgroundPositionX = 300 + value * -1 + 'px';
+        wave3.style.backgroundPositionX = 200 + value * 4 + 'px';
+        wave14.style.backgroundPositionX = 100 + value * -1 + 'px';
+    })
+    
+</script>
+
+</html>

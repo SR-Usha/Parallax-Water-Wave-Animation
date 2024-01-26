@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    background: #3586ff;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: url(wave.png);
+    width: 100%;
+    height: 100px;
+    /*height is increased*/
+    background-size: 1000px 100px;
+    animation: waveMotion 4s ease-in-out infinite;
+    animation-delay: calc(var(--i) * 0.25s);
+
+}
+
+@keyframes waveMotion {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(20px);
+    }
+}
+
+.wave#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    background-position-x: 400px;
+}
+
+.wave#wave2 {
+    z-index: 999;
+    opacity: 0.5;
+    background-position-x: 300px;
+}
+
+.wave#wave3 {
+    z-index: 998;
+    opacity: 0.2;
+    background-position-x: 200px;
+}
+
+.wave#wave4 {
+    z-index: 997;
+    opacity: 0.7;
+    background-position-x: 100px;
+}
+
+
+.sec {
+    padding: 5%;
+    width: 70%;
+    margin: auto;
+}
+
+.sec h1 {
+    font-size: 2em;
+}
+
+.sec p {
+    font-size: 0.8rem
+}
